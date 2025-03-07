@@ -9,7 +9,7 @@ Windows:
 
 >.venv\Scripts\activate
 
-2)заходимо в папку з проектом і запускаємо
+2) Заходимо в папку з проектом і запускаємо
 
 >pip install -r .\requirements.txt
 
