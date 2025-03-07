@@ -5,8 +5,9 @@
 1) створити віртуальне середовище
 Windows:
 
->python -m venv .venv 
->.venv\Scripts\activate
+python -m venv .venv 
+
+.venv\Scripts\activate
 
 2)
 заходимо в папку з проектом і запускаємо
