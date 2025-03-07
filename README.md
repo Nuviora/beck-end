@@ -6,7 +6,6 @@
 Windows:
 
 python -m venv .venv 
-
 .venv\Scripts\activate
 
 2)
