@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
-from user.models import User
-from db_setup import get_db
+from app.models.models import User
+from app.db.db_setup import get_db
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.exc import IntegrityError
@@ -14,14 +14,6 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World 434"}
 
-
-@app.get("/cars")
-def read_root():
-    return {"Hello": "my cars"}
-
-@app.get("/cars2")
-def read_root():
-    return {"Hello": "my cars2"}
 
 class UserCreate(BaseModel):
     name: str
