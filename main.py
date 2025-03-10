@@ -19,6 +19,10 @@ def read_root():
 def read_root():
     return {"Hello": "my cars"}
 
+@app.get("/cars2")
+def read_root():
+    return {"Hello": "my cars2"}
+
 class UserCreate(BaseModel):
     name: str
     email: str
