@@ -17,3 +17,8 @@ def read_root():
 def read_root():
     return {"Hello": "we are users"}
 
+
+@app.get("/users_one")
+def read_root():
+    return {"Hello": "we are users_one"}
+
