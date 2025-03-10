@@ -13,3 +13,7 @@ def read_root():
 def read_root():
     return {"Hello": "get test"}
 
+@app.get("/users")
+def read_root():
+    return {"Hello": "we are users"}
+
