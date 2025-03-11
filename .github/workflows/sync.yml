@@ -46,7 +46,7 @@ jobs:
         run: |
           # Check for new commits in the main branch
           if [ "$(git rev-parse HEAD)" != "$(git ls-remote origin main | awk '{print $1}')" ]; then
-            git push --force-if-includes https://x-access-token:${{ secrets.GH_PAT }}@github.com/Nuviora/beck-end.git main
+            git push --force https://x-access-token:${{ secrets.GH_PAT }}@github.com/Nuviora/beck-end.git main
           else
             echo "No new commits to push"
           fi
